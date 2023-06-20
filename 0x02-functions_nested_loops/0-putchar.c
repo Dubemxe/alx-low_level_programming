@@ -1,9 +1,7 @@
 #include "main.h"
 /**
- * main - Entry point
- * _putchar - prints the characters given
- * @c: The characters to be printed
- *
+ * _putchar - prints the characters given * main - Entry point
+ * @c: characters to be printed
  * Return: Always 0 (Success)
  */
 int _putchar(char c); /**function for putchar*/
