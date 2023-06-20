@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _putchar - prints the characters given * main - Entry point
+ * _putchar - prints characters, main - Entry point
  * @c: characters to be printed
  * Return: Always 0 (Success)
  */
