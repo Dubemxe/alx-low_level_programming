@@ -1,17 +1,18 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - Empty point
+ * print_alphabet - Make the alphabet
  *
- * Return: Always 0 (Success)
+ * _putchar as a function
+ * Return: void
  */
-void print_alphabet(void);
-int main(void)
+void print_alphabet(void)
 {
-	int alpha;
-       int alpha = print_alphabet(alpha = 'a'; alpha <= 'z'; alpha++);
+	char c;
 
-	putchar("%d! = %d", alpha);
-	putchar("\n");
-	return (0);
+	for (c = 'a'; c <= 'z'; c++)
+
+	{
+	_putchar(c);
+	}
+	_putchar('\n');
 }
-
