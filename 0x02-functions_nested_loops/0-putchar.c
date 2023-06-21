@@ -1,10 +1,8 @@
 #include "main.h"
 /**
- * _putchar - prints characters, main - Entry point
- * @c: characters to be printed
- * Return: Always 0 (Success)
+ * main - Entry point
+ * Return: Always 0
  */
-int _putchar(char c); /**function for putchar*/
 int main(void)
 {
 	_putchar('_');
