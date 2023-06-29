@@ -45,7 +45,5 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	if (digits == size_r)
 		return (0);
 	*(r + digits) = '\0';
-	cap_string(r);
 	return (r);
 }
-
