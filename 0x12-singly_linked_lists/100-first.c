@@ -2,7 +2,7 @@
 void first(void) __attribute__ ((constructor));
 
 /**
- * main - Entry point
+ * first - Entry point
  *
  * Return: Nothing!
  */
