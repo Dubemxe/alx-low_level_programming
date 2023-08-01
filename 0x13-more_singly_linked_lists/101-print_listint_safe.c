@@ -54,27 +54,24 @@ size_t loop_listint_count(const listint_t *head)
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t node, i = 0;
+	size_t count = 0;
+	const listint_t *var = head;
+	int loop;
 
-	node = loop_listint_count(head);
+	loop = loop_listint_count(head);
 
-	if (node == 0)
+	if (head == NULL)
+		return (0);
+
+	while (var && (!loop || count < (size_t)loop))
 	{
-		for (; head != NULL; node++)
-		{
-			printf("[%p] %d\n", (void *)head, head->n);
-			head = head->next;
-		}
+		printf("[%p] %d\n", (void *)var, var->n);
+		var = var->next;
+		count++;
 	}
-
-	else
+	if (loop)
 	{
-		for (i = 0; i < node; i++)
-		{
-			printf("[%p] %d\n", (void *)head, head->n);
-			head = head->next;
-		}
-		printf("-> [%p} %d\n", (void *)head, head->n);
+		printf("-> [%p] %d\n", (void *)var, var->n);
 	}
-	return (node);
+	return (count);
 }
