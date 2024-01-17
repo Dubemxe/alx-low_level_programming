@@ -30,7 +30,7 @@ int recursive_binary_search(int *array, size_t left, size_t right, int value)
 	}
 
 	if (array[midway] >= value)
-			return (recursive_binary_search(array, left, midway, value));
+		return (recursive_binary_search(array, left, midway, value));
 	return (recursive_binary_search(array, midway + 1, right, value));
 }
 
