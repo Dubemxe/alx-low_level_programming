@@ -4,7 +4,8 @@
  * ini_binary_search - earches for a value in a sorted array of integers
  * using the Binary search algorithm.
  * @array: A pointer to the first element of the array to search in.
- * @size: The number of elements in the array.
+ * @left: The starting index of the (sub)array to search.
+ * @right: The ending index of the (sub)array to search.
  * @value: The value to search for.
  *
  * Return: The index where value is located or -1 if
